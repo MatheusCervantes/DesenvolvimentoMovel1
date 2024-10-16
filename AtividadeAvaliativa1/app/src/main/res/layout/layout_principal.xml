@@ -23,14 +23,16 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Botão 1"></Button>
+                android:text="Botão 1"
+                android:id="@+id/btn1"></Button>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginBottom="30dp"
-                android:text="Botão 2"></Button>
+                android:text="Botão 2"
+                android:id="@+id/btn2"></Button>
         </TableRow>
 
         <TableRow>
@@ -38,13 +40,15 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Botão 3"></Button>
+                android:text="Botão 3"
+                android:id="@+id/btn3"></Button>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:text="Botão 4"></Button>
+                android:text="Botão 4"
+                android:id="@+id/btn4"></Button>
         </TableRow>
 
     </TableLayout>
