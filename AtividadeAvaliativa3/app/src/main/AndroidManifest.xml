@@ -23,5 +23,9 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ViewAnimal"
+            android:exported="true">
+        </activity>
+
     </application>
 </manifest>
