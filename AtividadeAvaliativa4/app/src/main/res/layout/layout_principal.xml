@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/campo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu nome"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TimePicker
+                android:id="@+id/pckHora"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"></TimePicker>
+
+            <DatePicker
+                android:id="@+id/pckData"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"></DatePicker>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"></Button>
+
+    <Button
+        android:id="@+id/btnFormato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FORMATO ALTERNATIVO"></Button>
+
+</LinearLayout>
