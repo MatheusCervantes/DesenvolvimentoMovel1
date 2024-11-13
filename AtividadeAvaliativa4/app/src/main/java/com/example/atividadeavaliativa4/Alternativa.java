@@ -12,19 +12,20 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.TimePicker;
 
-import java.sql.Time;
-
 public class Alternativa extends Activity {
+
+    private TimePickerDialog.OnTimeSetListener ouvidorTempo;
+    private DatePickerDialog.OnDateSetListener ouvidorData;
+    private TextView texto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_alternativo);
 
-        TextView texto = (TextView)findViewById(R.id.txtPrompt);
-        Button btnData = (Button) findViewById(R.id.btnData);
-
-        final RadioButton escolhaHora = (RadioButton) findViewById(R.id.escolhaHora);
+        texto = findViewById(R.id.txtPrompt);
+        Button btnData = findViewById(R.id.btnData);
+        final RadioButton escolhaHora = findViewById(R.id.escolhaHora);
 
         btnData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,31 +37,30 @@ public class Alternativa extends Activity {
             }
         });
 
-        @Override
-        protected onCreateDialog(int id) {
-            ouvidorTempo = new TimePickerDialog.OnTimeSetListener() {
-                @Override
-                public void onTimeSet (TimePicker view, int hourOfDay, int minute) {
-                    texto.setText("Escolha uma opção abaixo: " + hourOfDay + ":" + minute);
-                }
-            };
-
-            ouvidorData = new DatePickerDialog.OnDateSetListener() {
-                @Override
-                public void onDateSet (DatePicker view, int year, int month, int dayOfMonth) {
-                    texto.setText("Escolha uma opção abaixo: " + dayOfMonth + "/" + month + "/" + year);
-                }
-            };
-
-            switch (id) {
-                case 0: TimePickerDialog tempo;
-                    tempo = new TimePickerDialog(this, ouvidorTempo, 12, 00, false);
-                    return tempo;
-                case 1: DatePickerDialog data;
-                    data = new DatePickerDialog(this, ouvidorData, 2024, 10, 10);
-                    return data;
+        ouvidorTempo = new TimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+                texto.setText("Escolha uma opção abaixo: " + hourOfDay + ":" + minute);
             }
-            return null;
+        };
+
+        ouvidorData = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                texto.setText("Escolha uma opção abaixo: " + dayOfMonth + "/" + (month + 1) + "/" + year);
+            }
+        };
+    }
+
+    @Override
+    protected Dialog onCreateDialog(int id) {
+        switch (id) {
+            case 0:
+                return new TimePickerDialog(this, ouvidorTempo, 12, 0, false);
+            case 1:
+                return new DatePickerDialog(this, ouvidorData, 2024, 10, 10);
+            default:
+                return null;
         }
     }
 }

@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AtividadeAvaliativa4"
 include(":app")
+ 

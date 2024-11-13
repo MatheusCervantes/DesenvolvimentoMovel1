@@ -1,6 +1,7 @@
 package com.example.atividadeavaliativa4;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ public class Principal extends Activity {
         setContentView(R.layout.layout_principal);
 
         Button btnCalcular = (Button) findViewById(R.id.btnCalcular);
+        Button btnFormato = (Button) findViewById(R.id.btnFormato);
 
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +49,14 @@ public class Principal extends Activity {
                 } else {
                     Toast.makeText(getBaseContext(), "Nascimento maior que data atual", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        btnFormato.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getBaseContext(), Alternativa.class);
+                startActivity(i);
             }
         });
     }
