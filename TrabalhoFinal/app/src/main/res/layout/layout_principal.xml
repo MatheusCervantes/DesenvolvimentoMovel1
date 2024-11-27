@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Viagem"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/compass"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:id="@+id/btnSimulacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nova Simulação"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Histórico de Simulações"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSobre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sobre"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sobre o Sistema"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-condensed" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Este sistema foi desenvolvido com o intuito de calcular o consumo de veículos durante uma viagem, levando em consideração o preço do combustível, a distância percorrida e o consumo médio do carro."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:maxWidth="320dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Além disso, o sistema permite salvar localmente um histórico de todas as simulações realizadas, facilitando o acompanhamento do desempenho do veículo em diferentes condições."
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:maxWidth="320dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvedor: Matheus Cervantes"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trabalho Final para a Disciplina: Desenvolvimento Móvel I"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnVoltarSobre"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Voltar"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp" />
+</LinearLayout>
