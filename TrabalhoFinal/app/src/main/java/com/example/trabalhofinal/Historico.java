@@ -9,10 +9,6 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.view.Gravity;
-import android.content.Context;
-
-
-import java.text.DecimalFormat;
 import java.util.List;
 import java.util.Map;
 
