@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_calculo1"
+        android:title="Valor gasto" />
+    <item
+        android:id="@+id/menu_calculo2"
+        android:title="Quantidade de combustível gasta" />
+    <item
+        android:id="@+id/menu_calculo3"
+        android:title="Salvar dados" />
+</menu>

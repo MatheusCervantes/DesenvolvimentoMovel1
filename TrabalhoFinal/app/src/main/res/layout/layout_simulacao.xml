@@ -1,154 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    android:gravity="center_horizontal"
-    android:background="@color/white">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Simulação de Viagem"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="30dp"
-        android:fontFamily="sans-serif-condensed"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Valor do Combustível (R$):"
-        android:textColor="@color/black"
-        android:layout_marginBottom="5dp"/>
-
-    <EditText
-        android:id="@+id/edtValorCombustivel"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="numberDecimal"
-        android:hint="Ex: 5.89"
-        android:layout_marginBottom="15dp"/>
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tipo de Combustível:"
-        android:textColor="@color/black"
-        android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Simulação de Viagem"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
-    <Spinner
-        android:id="@+id/spinnerTipoCombustivel"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Valor do Combustível (R$):"
+            android:textColor="@color/black" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Distância Percorrida (km):"
-        android:textColor="@color/black"
-        android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edtValorCombustivel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="15dp"
+            android:hint="Ex: 5.89"
+            android:inputType="numberDecimal" />
 
-    <EditText
-        android:id="@+id/edtDistancia"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="numberDecimal"
-        android:hint="Ex: 150"
-        android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Tipo de Combustível:"
+            android:textColor="@color/black" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Consumo Médio (km/l):"
-        android:textColor="@color/black"
-        android:layout_marginBottom="5dp"/>
+        <Spinner
+            android:id="@+id/spinnerTipoCombustivel"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="15dp" />
 
-    <EditText
-        android:id="@+id/edtConsumo"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:inputType="numberDecimal"
-        android:hint="Ex: 12"
-        android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Distância Percorrida (km):"
+            android:textColor="@color/black" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Modelo do Veículo:"
-        android:textColor="@color/black"
-        android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edtDistancia"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="15dp"
+            android:hint="Ex: 150"
+            android:inputType="numberDecimal" />
 
-    <EditText
-        android:id="@+id/edtModeloVeiculo"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Ex: Honda Civic"
-        android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Consumo Médio (km/l):"
+            android:textColor="@color/black" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Valor Gasto (R$):"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edtConsumo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Ex: 12"
+            android:inputType="numberDecimal" />
 
-    <TextView
-        android:id="@+id/txtValorGasto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
-        android:padding="10dp"
-        android:textColor="@color/white"
-        android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Modelo do Veículo:"
+            android:textColor="@color/black" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Número de Litros:"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/edtModeloVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="15dp"
+            android:hint="Ex: Honda Civic" />
 
-    <TextView
-        android:id="@+id/txtNumeroLitros"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/darker_gray"
-        android:padding="10dp"
-        android:textColor="@color/white"
-        android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Valor Gasto (R$):"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnCalcular"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Calcular"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:textColor="@color/white"
-        android:padding="12dp"/>
+        <TextView
+            android:id="@+id/txtValorGasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/darker_gray"
+            android:padding="10dp"
+            android:textColor="@color/white" />
 
-    <Button
-        android:id="@+id/btnLimpar"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="Limpar"
-        android:backgroundTint="@android:color/holo_orange_light"
-        android:textColor="@android:color/white"
-        android:padding="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Número de Litros:"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnVoltar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Voltar"
-        android:backgroundTint="@android:color/holo_red_light"
-        android:textColor="@color/white"
-        android:padding="12dp"/>
+        <TextView
+            android:id="@+id/txtNumeroLitros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/darker_gray"
+            android:padding="10dp"
+            android:textColor="@color/white" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:padding="12dp"
+            android:text="Calcular"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:padding="12dp"
+            android:text="Limpar"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:padding="12dp"
+            android:text="Voltar"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

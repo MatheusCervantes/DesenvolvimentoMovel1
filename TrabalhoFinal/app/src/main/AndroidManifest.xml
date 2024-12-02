@@ -24,6 +24,12 @@
 
         <activity android:name=".Simulacao"
             android:exported="true"></activity>
+
+        <activity android:name=".Historico"
+            android:exported="true"></activity>
+
+        <activity android:name=".Sobre"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
